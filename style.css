@@ -1,0 +1,15 @@
+body {
+    background-color: darkolivegreen;
+}
+
+.main {
+
+    text-align: center;
+}
+
+.maine {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+}
