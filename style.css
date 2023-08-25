@@ -3,7 +3,6 @@ body {
 }
 
 .main {
-
     text-align: center;
 }
 
@@ -11,5 +10,4 @@ body {
     display: flex;
     justify-content: center;
     align-self: center;
-
 }
