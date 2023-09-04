@@ -93,38 +93,28 @@
     <p></p>
     <!-- task 2 -->
     <table>
-        <thead>
-            <tr>
-                <th>Monday</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>19:30</td>
-                <td>Hard skills</td>
-            </tr>
-        </tbody>
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Subject</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>19:30</td>
+            <td>Hard skills</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>17:00</td>
+            <td>Soft skills</td>
+        </tr>
 
-        <thead>
-            <tr>
-                <th>Friday</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>17:00</td>
-                <td>Soft skills</td>
-            </tr>
-        </tbody>
+        <tr>
+            <td>Suturdsy</td>
+            <td>15:30</td>
+            <td>Hard skills</td>
+        </tr>
 
-        <thead>
-            <tr>
-                <th>Suturdsy</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>15:30</td>
-                <td>Hard skills</td>
-            </tr>
-        </tbody>
 
 
     </table>
@@ -139,18 +129,41 @@
             <label for="name">Please type your first name and last name</label>
             <input type="name" placeholder="ivan bastion" id="name">
         </div>
-        <div>
-            <label for="email">Please provide your email</label>
-            <input type="email" placeholder="example.@gmail.com" id="email" autofocus autocomplete="on">
-        </div>
+        <fieldset class="form-group">
+            <legend class="group-title">Your contacts</legend>
+            <div>
+                <label for="email">Please provide your email</label>
+                <input type="email" placeholder="example.@gmail.com" id="email" autofocus autocomplete="on">
+            </div>
 
+            <div>
+                <label for="tell">Please type your telefone number</label>
+                <input type="tell" placeholder="+49 or +380-(99)-999-9999" id="telefone">
+            </div>
+        </fieldset>
         <div>
-            <label for="tell">Please type your telefone number</label>
-            <input type="tell" placeholder="+49 or +380-(99)-999-9999" id="telefone">
+            <label for="text">Please leave your comment
+                <textarea name="feedback" rows="5" placeholder="Please leave your comment..."></textarea>
+            </label>
         </div>
         <div>
-            <label for="text">Please leave your comment</label>
-            <input type="text" width="500" height="1000">
+            <label>
+                <input type="radio" name="Gender" value="Man">
+                Man
+            </label>
+            <label>
+                <input type="radio" name="Gender" value="Women">
+                Women
+            </label>
+        </div>
+        <div>
+            <select name="country">
+                <option value="Ukraine">Ukraine</option>
+                <option value="UK">UK</option>
+                <option value="USA">USA</option>
+                <option value="Germany">Germany</option>
+                <option value="Romania">Romania</option>
+            </select>
         </div>
         <p>
             <button>Sign up</button>
